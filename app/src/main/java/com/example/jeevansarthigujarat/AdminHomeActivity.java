@@ -15,6 +15,7 @@ public class AdminHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home);
         manageHospital = findViewById(R.id.admin_home_hospital);
+
         manageHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
