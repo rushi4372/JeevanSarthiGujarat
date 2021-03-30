@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+
+                android:id="@+id/home_banner_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="30"
+                app:iss_delay="1000"
+                app:iss_error_image="@drawable/slidererror"
+                app:iss_period="5000"
+                app:iss_placeholder="@drawable/sliderplaceholder" />
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:id="@+id/home_commonsymptom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_banner_slider"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Top Specialities"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_commonsymptom_text"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

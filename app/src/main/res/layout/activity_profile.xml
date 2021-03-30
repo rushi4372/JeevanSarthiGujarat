@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/profile_linearlayout"
+    android:background="@drawable/backgroungprofile1"
+    tools:context=".ProfileActivity">
+
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/profile_name"
+        android:hint="Enter Name"
+        android:background="@drawable/custom_profile_edittext"
+        android:layout_marginHorizontal="50dp"
+        android:padding="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        android:id="@+id/profile_email"
+        android:hint="Enter Email Id"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="phone"
+        android:id="@+id/profile_contact"
+        android:hint="Enter Contact No."
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="textPassword"
+        android:id="@+id/profile_password"
+        android:hint="Enter Password"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="date"
+        android:id="@+id/profile_dob"
+        android:hint="Enter Date Of Birth(YYYY-MM-DD)"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="number"
+        android:id="@+id/profile_age"
+        android:hint="Enter Age"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:id="@+id/profile_weight"
+        android:hint="Enter Weight"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:id="@+id/profile_height"
+        android:hint="Enter Height"
+        android:background="@drawable/custom_profile_edittext"
+        android:padding="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/profile_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+            android:enabled="false"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:id="@+id/profile_gender_male"
+            android:background="@drawable/custom_profile_edittext"
+            android:text="Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:enabled="false"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:id="@+id/profile_gender_female"
+            android:background="@drawable/custom_profile_edittext"
+            android:text="Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:enabled="false"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:id="@+id/profile_gender_other"
+            android:background="@drawable/custom_profile_edittext"
+            android:text="Other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/profile_Edit_profile_button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Edit Profile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/profile_submit_profile_button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Submit Profile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/profile_logout_profile_button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

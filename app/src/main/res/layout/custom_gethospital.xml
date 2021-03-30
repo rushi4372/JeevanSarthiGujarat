@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+       <ImageView
+           android:layout_centerVertical="true"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:id="@+id/custom_gethospital_iv"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/custom_gethospital_iv"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_gethospital_hospitalname"
+
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_email"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_gethospital_hospita_email"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:drawableLeft="@drawable/ic_baseline_email" />
+
+
+
+            <TextView
+                android:drawableStart="@drawable/ic_baseline_call"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/custom_gethospital_hospita_contact"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:drawableLeft="@drawable/ic_baseline_call" />
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
